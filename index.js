@@ -100,3 +100,5 @@ client.on('messageCreate', async (message) => {
 });
 
 client.login(process.env.TOKEN);
+const http = require('http');
+http.createServer((req, res) => res.end('Bot activo')).listen(3000);
